@@ -1,0 +1,146 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+html {
+
+	box-sizing: border-box;
+}
+
+
+
+
+body {
+	font-family: 'Times New Roman', Times, serif;
+	background-color: rgb(89, 89, 245);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.Panel {
+	background-color: rgb(255, 255, 255);
+	width: 100%;
+	max-width: 960px;
+	border-radius: 10px;
+	padding: 15px 20px;
+	display: flex;
+	text-transform: uppercase;
+	text-align: center;
+	flex-direction: column;
+}
+
+.Pricing-Header {
+	color: #888;
+	letter-spacing: 1px;
+	font-weight: 600;
+	letter-spacing: 1px;
+
+}
+
+
+.Pricing-Features {
+	margin: 50px 0px 25px;
+	color: rgba(36, 124, 206, 0.842);
+}
+
+.Pricing-Items {
+	letter-spacing: 1px;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 1,5;
+	padding: 15px 0;
+	border-top: 1px solid rgb(194, 184, 184) ;
+}
+
+.Pricing-Plan {
+	border-bottom: 1px rgb(194, 184, 184);
+}
+
+.price {
+	color: blue;
+	font-weight: 700;
+	font-size: 32px;
+	display: block;
+
+}
+
+a {
+	color: rgb(67, 40, 187);
+
+}
+
+.pricing-img {
+	margin-bottom: 25px;
+	
+	max-width: 100%;
+}
+
+.Pricing-Button {
+	display: inline-block;
+	border: 1px solid rgb(163, 233, 255);
+	border-radius: 10px;
+	padding: 15px 35px;
+	text-decoration: none;
+	margin: 25px 0;
+}
+
+.Pricing-Button:hover,.Pricing-Button:focus{
+	background-color: rgb(31, 214, 175);
+
+}
+
+@media screen and (min-width: 900px ) {
+	.Panel{
+		flex-direction: row;
+
+	}
+
+}
